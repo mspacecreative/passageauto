@@ -139,6 +139,14 @@ footer p a {
 	color: #e6c93a;
 }
 
+@media (max-width: 55em) and (orientation: landscape) {
+	.logo-grid .display-flex .et_pb_column {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+		padding: 0 1em;
+	}
+}
+
 @media (max-width: 30em) {
 	.logo-grid .display-flex .et_pb_column {
 		flex: 0 0 50%;
@@ -154,7 +162,7 @@ footer p a {
 		max-width: 80px;
 	}
 	
-	.et_pb_row .et_pb_column.et_pb_column_1_4.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_4:last-child, .et_pb_row .et_pb_column.et_pb_column_1_5.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_5:last-child, .et_pb_row .et_pb_column.et_pb_column_1_6.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_6:last-child {
-		margin-bottom: 30px;
+	.et_pb_row .et_pb_column.et_pb_column_1_4.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_4:last-child, .et_pb_row .et_pb_column.et_pb_column_1_5.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_5:last-child, .et_pb_row .et_pb_column.et_pb_column_1_6.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_6:last-child, .logo-grid .display-flex .et_pb_column {
+		margin-bottom: 50px;
 	}
 }
