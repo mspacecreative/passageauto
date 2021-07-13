@@ -90,7 +90,7 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 }
 
 #main-header .et_mobile_menu {
-	background-color: #fff;
+	background-color: #fff !important;
 }
 
 @font-face {
