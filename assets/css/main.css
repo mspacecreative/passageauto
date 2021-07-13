@@ -89,6 +89,10 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	top: 100%;
 }
 
+#mobile_menu {
+	background-color: #fff;
+}
+
 @font-face {
 font-family: skinnyFont;
 src: url(../fonts/Skinny-Regular.otf);
@@ -125,5 +129,9 @@ footer p a {
 		flex: 0 0 50%;
 		max-width: 50%;
 		padding: 0 1em;
+	}
+	
+	.display-flex-mobile {
+		display: flex;
 	}
 }
