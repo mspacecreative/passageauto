@@ -24,6 +24,9 @@ function customStyles()
 {
     wp_register_style('maincss', get_stylesheet_directory_uri() . '/assets/css/main.css', array(), '1.0', 'all');
     wp_enqueue_style('maincss');
+    
+    wp_register_script('mainjs', get_stylesheet_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
+    wp_enqueue_style('mainjs');
 }
 add_action('wp_enqueue_scripts', 'customStyles');
 

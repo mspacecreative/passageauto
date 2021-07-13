@@ -93,6 +93,10 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	background-color: #fff !important;
 }
 
+#main-header .et_mobile_menu a {
+	color: #fff !important;
+}
+
 @font-face {
 font-family: skinnyFont;
 src: url(../fonts/Skinny-Regular.otf);
