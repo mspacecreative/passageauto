@@ -1,9 +1,24 @@
 (function($) {
+	// CLOSE MENU ON LINK CLICK
 	var menItem = $('.et_mobile_menu li'),
 		mobileMenu = $('.et_mobile_menu');
 		
-		menItem.click(function() {
-			mobileMenu.slideUp();
-		});
+	menItem.click(function() {
+		mobileMenu.slideUp();
+	});
+	
+	// HIDE/SHOW HEADER ON SCROLL
+	var lastScrollTop = 0;
+	var delta = 5;
+	$(window).on('scroll', function() {
+		var st = $(this).scrollTop();
+		if (st < lastScrollTop) {
+			$('header').addClass('up').removeClass('down');
+		} else if (st > lastScrollTop && st > delta) {
+			$('header').addClass('down').removeClass('up');
+		}
+		
+		lastScrollTop = st;
+	});
 	
 })(jQuery);
