@@ -146,6 +146,10 @@ footer p a {
 		padding: 0 1em;
 		margin-right: 0;
 	}
+	
+	.et_pb_row .et_pb_column.et_pb_column_1_4.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_4:last-child, .et_pb_row .et_pb_column.et_pb_column_1_5.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_5:last-child, .et_pb_row .et_pb_column.et_pb_column_1_6.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_6:last-child, .logo-grid .display-flex .et_pb_column {
+		margin-bottom: 50px;
+	}
 }
 
 @media (max-width: 30em) {
