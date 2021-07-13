@@ -1,0 +1,21 @@
+.chrome-top-border, .chrome-bottom-border {
+	position: relative;
+}
+.chrome-top-border::before, .chrome-bottom-border::before {
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	content: "";
+	left: 0;
+	z-index: 3;
+	background-image: url(../img/textures/chrome_texture.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.chrome-top-border::before {
+	bottom: 100%;
+}
+.chrome-bottom-border::before {
+	top: 100%;
+}

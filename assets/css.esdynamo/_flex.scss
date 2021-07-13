@@ -1,0 +1,26 @@
+.display-flex {
+	display: flex;
+	flex-wrap: wrap;
+	//margin-right: -2rem;
+	//margin-left: -2rem;
+}
+.align-items-center {
+	align-items: center;
+}
+.flex-4 > div {
+	flex: 0 0 25%;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.square-logo img {
+	max-width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+// LOGO GRID
+.logo-grid .et_pb_image_wrap {
+	max-width: 150px;
+	margin-right: auto;
+	margin-left: auto;
+}

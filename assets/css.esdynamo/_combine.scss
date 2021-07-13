@@ -1,0 +1,40 @@
+// HEADER STYLES
+@import "_header.scss";
+
+// BUTTON STYLES
+@import "_buttons.scss";
+
+// FLEX STYLES
+@import "_flex.scss";
+
+// TYPOGRAPHY STYLES
+@import "_typography.scss";
+
+// HOME STYLES
+@import "_home.scss";
+
+// SKINNY TYPOGRAPHY
+@font-face {
+	font-family: skinnyFont;
+	src: url(../fonts/Skinny-Regular.otf);
+}
+.skinny-font {
+	font-family: skinnyFont, sans-serif;
+}
+h1 .skinny-font {
+	font-size: 60px;
+}
+#sidebar ol, #sidebar ul {
+	list-style: inherit;
+	padding-left: 18px;
+}
+#sidebar ul a {
+	text-decoration: underline;
+	color: #233e91;
+}
+footer p {
+	color: #fff;
+}
+footer p a {
+	color: #e6c93a;
+}
