@@ -178,7 +178,7 @@ footer p a {
 }
 
 @media (min-width: 981px) {
-	.display-flex .et_pb_module:nth-child(4n+1):nth-last-child(-n+4), .display-flex .et_pb_module:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_module {
+	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4), .display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_module {
 		padding-bottom: 0;
 	}
 }
