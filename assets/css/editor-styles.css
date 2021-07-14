@@ -149,13 +149,13 @@ footer p a {
 }
 
 @media (min-width: 981px) {
-	.logo-grid .display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4), .logo-grid .display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
+	.logo-grid .display-flex:nth-of-type(2) .et_pb_column:nth-child(4n+1):nth-last-child(-n+4), .logo-grid .display-flex:nth-of-type(2) .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
 		padding-bottom: 0;
 	}
 }
 
 @media (max-width: 980px) {
-	.logo-grid .display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4), .logo-grid .display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
+	.logo-grid .display-flex:nth-of-type(2) .et_pb_column:nth-child(4n+1):nth-last-child(-n+4), .logo-grid .display-flex:nth-of-type(2) .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
 		padding-bottom: 0;
 	}
 	
@@ -194,11 +194,11 @@ footer p a {
 }
 
 @media (max-width: 480px) {
-	.logo-grid .display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4), .logo-grid .display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) {
+	.logo-grid .display-flex:nth-of-type(2) .et_pb_column:nth-child(4n+1):nth-last-child(-n+4), .logo-grid .display-flex:nth-of-type(2) .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
 		padding-bottom: 50px;
 	}
 	
-	.logo-grid .display-flex:last-of-type .et_pb_column:nth-child(2n+1):nth-last-child(-n+2), .logo-grid .display-flex:last-of-type .et_pb_column:nth-child(2n+1):nth-last-child(-n+2) ~ .et_pb_column {
+	.logo-grid .display-flex:nth-of-type(2) .et_pb_column:nth-child(2n+1):nth-last-child(-n+2), .logo-grid .display-flex:nth-of-type(2) .et_pb_column:nth-child(2n+1):nth-last-child(-n+2) ~ .et_pb_column {
 		padding-bottom: 0;
 	}
 }
