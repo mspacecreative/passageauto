@@ -38,6 +38,7 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	flex: 0 0 25%;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	padding-bottom: 50px;
 }
 
 .square-logo img {
