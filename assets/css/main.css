@@ -191,5 +191,6 @@ footer p a {
 	.logo-grid .display-flex .et_pb_column {
 		flex: 0 0 33.333%;
 		max-width: 33.333%;
+		margin-right: 0;
 	}
 }
