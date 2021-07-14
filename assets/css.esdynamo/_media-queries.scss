@@ -42,13 +42,13 @@
 }
 
 @media (max-width: 480px) {
-	.display-flex:last-of-type .et_pb_module:nth-child(2n+1):nth-last-child(-n+2),
-	.display-flex:last-of-type .et_pb_module:nth-child(2n+1):nth-last-child(-n+2) ~ .et_pb_module {
-		padding-bottom: 0;
-	}
 	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4),
 	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_module {
 		padding-bottom: 50px;
+	}
+	.display-flex:last-of-type .et_pb_module:nth-child(2n+1):nth-last-child(-n+2),
+	.display-flex:last-of-type .et_pb_module:nth-child(2n+1):nth-last-child(-n+2) ~ .et_pb_module {
+		padding-bottom: 0;
 	}
 }
 
