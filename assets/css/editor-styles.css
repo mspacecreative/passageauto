@@ -194,7 +194,7 @@ footer p a {
 }
 
 @media (max-width: 480px) {
-	.logo-grid .last .et_pb_column:nth-child(4n+1):nth-last-child(-n+4), .logo-grid .last .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
+	.logo-grid .last .et_pb_column:nth-child(4n+1):nth-last-child(-n+4), .logo-grid .last .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column, .logo-grid .last .et_pb_column:nth-child(3n+1):nth-last-child(-n+3), .logo-grid .last .et_pb_column:nth-child(3n+1):nth-last-child(-n+3) ~ .et_pb_column {
 		padding-bottom: 50px;
 	}
 	
