@@ -188,6 +188,10 @@ footer p a {
 		padding-bottom: 0;
 	}
 	
+	.et_pb_row_1-2_1-4_1-4 .et_pb_column:nth-last-child(-n+2), .et_pb_row_1-4_1-4 .et_pb_column:nth-last-child(-n+2), .et_pb_row_4col .et_pb_column:nth-last-child(-n+2) {
+		margin-bottom: 30px;
+	}
+	
 	.logo-grid .display-flex .et_pb_column {
 		flex: 0 0 25%;
 		max-width: 25%;
