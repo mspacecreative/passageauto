@@ -4,3 +4,9 @@
 #main-header .et_mobile_menu a {
 	color: #333!important;
 }
+
+// MOBILE MENU
+.opened .mobile_menu_bar:before {
+	content: "\4d";
+	transition: 0.25s ease-in-out;
+}
