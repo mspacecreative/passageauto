@@ -43,7 +43,7 @@
 
 @media (max-width: 480px) {
 	.logo-grid .display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4),
-	.logo-grid .display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
+	.logo-grid .display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) {
 		padding-bottom: 50px;
 	}
 	.logo-grid .display-flex:last-of-type .et_pb_column:nth-child(2n+1):nth-last-child(-n+2),
