@@ -1,13 +1,13 @@
 @media (min-width: 981px) {
-	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4),
-	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_module {
+	.display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4),
+	.display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
 		padding-bottom: 0;
 	}
 }
 
 @media (max-width: 980px) {
-	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4),
-	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_module {
+	.display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4),
+	.display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
 		padding-bottom: 0;
 	}
 	.et_pb_row_1-2_1-4_1-4 .et_pb_column:nth-last-child(-n+2), .et_pb_row_1-4_1-4 .et_pb_column:nth-last-child(-n+2), .et_pb_row_4col .et_pb_column:nth-last-child(-n+2) {
@@ -42,12 +42,12 @@
 }
 
 @media (max-width: 480px) {
-	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4),
-	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_module {
+	.display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4),
+	.display-flex:last-of-type .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
 		padding-bottom: 50px;
 	}
-	.display-flex:last-of-type .et_pb_module:nth-child(2n+1):nth-last-child(-n+2),
-	.display-flex:last-of-type .et_pb_module:nth-child(2n+1):nth-last-child(-n+2) ~ .et_pb_module {
+	.display-flex:last-of-type .et_pb_column:nth-child(2n+1):nth-last-child(-n+2),
+	.display-flex:last-of-type .et_pb_column:nth-child(2n+1):nth-last-child(-n+2) ~ .et_pb_column {
 		padding-bottom: 0;
 	}
 }
