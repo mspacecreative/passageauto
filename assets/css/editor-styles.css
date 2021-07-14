@@ -57,6 +57,10 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	margin-left: auto;
 }
 
+.logo-grid img {
+	width: 100% !important;
+}
+
 .light a {
 	color: #fff;
 }
