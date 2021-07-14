@@ -162,7 +162,8 @@ footer p a {
 	.logo-grid .display-flex .et_pb_column {
 		flex: 0 0 25%;
 		max-width: 25%;
-		padding: 0 2em;
+		padding-right: 2em;
+		padding-left: 2em;
 		margin-right: 0;
 	}
 }
@@ -171,7 +172,8 @@ footer p a {
 	.logo-grid .display-flex .et_pb_column {
 		flex: 0 0 50%;
 		max-width: 50%;
-		padding: 0 1em;
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 	
 	.display-flex-mobile {
@@ -191,13 +193,18 @@ footer p a {
 	.display-flex:last-of-type .et_pb_module:nth-child(2n+1):nth-last-child(-n+2), .display-flex:last-of-type .et_pb_module:nth-child(2n+1):nth-last-child(-n+2) ~ .et_pb_module {
 		padding-bottom: 0;
 	}
+	
+	.display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4), .display-flex:last-of-type .et_pb_module:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_module {
+		padding-bottom: 50px;
+	}
 }
 
 @media (max-width: 55em) and (orientation: landscape) {
 	.logo-grid .display-flex .et_pb_column {
 		flex: 0 0 25%;
 		max-width: 25%;
-		padding: 0 2em;
+		padding-left: 2em;
+		padding-right: 2em;
 		margin-right: 0;
 	}
 	
