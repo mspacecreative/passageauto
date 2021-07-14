@@ -35,3 +35,14 @@
 		padding-bottom: 0;
 	}
 }
+
+@media (max-width: 980px) {
+	.display-flex:last-of-type .et_pb_module:nth-child(3n+1):nth-last-child(-n+3),
+	.display-flex:last-of-type .et_pb_module:nth-child(3n+1):nth-last-child(-n+3) ~ .et_pb_module {
+		padding-bottom: 0;
+	}
+	.logo-grid .display-flex .et_pb_column {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+	}
+}
