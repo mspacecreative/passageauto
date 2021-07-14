@@ -176,3 +176,9 @@ footer p a {
 		margin-bottom: 50px;
 	}
 }
+
+@media (min-width: 981px) {
+	.display-flex .et_pb_module:nth-child(4n+1):nth-last-child(-n+4), .display-flex .et_pb_module:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_module {
+		padding-bottom: 0;
+	}
+}
