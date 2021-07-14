@@ -52,6 +52,10 @@
 	.logo-grid .last .et_pb_column:nth-child(2n+1):nth-last-child(-n+2) ~ .et_pb_column {
 		padding-bottom: 0;
 	}
+	.et_pb_svg_logo #logo, .et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo {
+		height: auto;
+		max-width: 180px;
+	}
 }
 
 @media (max-width: 55em) and (orientation: landscape) {
@@ -65,5 +69,10 @@
 	.et_pb_row .et_pb_column.et_pb_column_1_4.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_4:last-child, .et_pb_row .et_pb_column.et_pb_column_1_5.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_5:last-child, .et_pb_row .et_pb_column.et_pb_column_1_6.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_6:last-child,
 	.logo-grid .display-flex .et_pb_column {
 		margin-bottom: 50px;
+	}
+	
+	.et_pb_svg_logo #logo, .et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo {
+		height: auto;
+		max-width: 180px;
 	}
 }
