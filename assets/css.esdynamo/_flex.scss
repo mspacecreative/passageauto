@@ -57,12 +57,16 @@
 	flex: 0 0 100%;
 	max-width: 100%;
 	margin-bottom: 2em;
-	margin-top: -43px;
+	margin-top: -4em;
 }
 .flex-full h1 {
 	display: inline-block;
     padding: 0 1em;
     background-color: #fff;
+}
+.featured-product-container {
+	padding-right: 2em;
+	padding-left: 2em;
 }
 .featured-product-container .inner {
 	border: 2px solid #ff2323;
