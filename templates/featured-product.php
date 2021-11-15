@@ -8,7 +8,7 @@ $loop = new WP_Query($args);
 
 if ( $loop->have_posts() ) {
 	echo '
-	<div class"featured-product-container display-flex">';
+	<div class="featured-product-container display-flex">';
 	while ( $loop->have_posts() ) {
 		$loop->the_post();
 		$content = get_the_content(get_the_ID());
@@ -20,13 +20,13 @@ if ( $loop->have_posts() ) {
 		$img = '<img src=' . esc_url($featuredproduct) . '" alt="' . esc_attr($alt) . '">';
 		if ( $content ) {
 		echo '
-		<div class"featured-product-content">
+		<div class="featured-product-content">
 			' . $content . '
 		</div>';
 		}
 		if ( !empty($imgfield) ) {
 		echo '
-		<div class"featured-product-image">
+		<div class="featured-product-image">
 			' . $img . '
 		</div>
 		';
