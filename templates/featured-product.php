@@ -17,7 +17,7 @@ if ( $loop->have_posts() ) {
 		$featuredproduct = $imgfield['sizes'][ $size ];
 	    $width = $imgfield['sizes'][ $size . '-width' ];
 	    $height = $imgfield['sizes'][ $size . '-height' ];
-		$img = '<img src=' . esc_url($featuredproduct) . '" alt="' . esc_attr($alt) . '">';
+		$img = '<img src="' . esc_url($featuredproduct) . '" alt="' . esc_attr($alt) . '">';
 		if ( $content ) {
 		echo '
 		<div class="featured-product-content">
