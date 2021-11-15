@@ -54,7 +54,7 @@ if ( $loop->have_posts() ) {
 			'<div class="featured-product-content">';
 				if ( $title && !$showtitle ) {
 				echo
-				'<h2 style="margin-bottom: 1em;">' .  $title . '</h2>';
+				'<h2 style="margin-bottom: 1em; font-weight: bold; color: #ff2323;">' .  $title . '</h2>';
 				}
 				echo $content .
 			'</div>';
