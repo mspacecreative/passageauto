@@ -240,6 +240,10 @@ footer p a {
 		padding-bottom: 2em;
 	}
 	
+	.splash {
+		height: auto !important;
+	}
+	
 	.logo-grid .display-flex .et_pb_column {
 		flex: 0 0 25%;
 		max-width: 25%;
