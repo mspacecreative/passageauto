@@ -16,7 +16,7 @@
 	}
 	
 	function splashContainerPadding() {
-		splashContainer.css('padding-top', header);
+		splashContainer.css('padding-top', header.height());
 	}
 	
 	// HIDE/SHOW HEADER ON SCROLL
