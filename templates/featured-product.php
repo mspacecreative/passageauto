@@ -8,7 +8,7 @@ $loop = new WP_Query($args);
 
 if ( $loop->have_posts() ) {
 	echo '
-	<div class="featured-product-container display-flex">';
+	<div class="featured-product-container display-flex align-items-center max-width-1080">';
 	while ( $loop->have_posts() ) {
 		$loop->the_post();
 		$content = get_the_content(get_the_ID());
