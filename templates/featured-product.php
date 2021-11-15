@@ -12,7 +12,7 @@ if ( $loop->have_posts() ) {
 	while ( $loop->have_posts() ) {
 		$loop->the_post();
 		$title = get_the_title(get_the_ID());
-		$showtitle = get_field('show_title', get_the_ID());
+		$showtitle = get_field('hide_product_post_title', get_the_ID());
 		$leadintitle = get_field('leadin_title', get_the_ID());
 		$content = get_the_content(get_the_ID());
 		$imgfield = get_field('product_image', get_the_ID());
