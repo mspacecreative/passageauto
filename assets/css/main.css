@@ -71,6 +71,10 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	margin-left: auto;
 }
 
+.featured-product-image {
+	display: block;
+}
+
 .light a {
 	color: #fff;
 }
@@ -173,7 +177,7 @@ footer p a {
 		padding-bottom: 4em;
 	}
 	
-	.featured-product-content, featured-product-image {
+	.featured-product-content, .featured-product-image {
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
