@@ -11,7 +11,7 @@
 	});
 	
 	function splashHeight() {
-		splash.height(viewport.height() - header);
+		splash.height(viewport.height() - header.height());
 	}
 	
 	// HIDE/SHOW HEADER ON SCROLL
