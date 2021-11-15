@@ -27,10 +27,6 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	flex-wrap: wrap;
 }
 
-.display-flex .et_pb_column {
-	padding-bottom: 50px;
-}
-
 .align-items-center {
 	align-items: center;
 }
