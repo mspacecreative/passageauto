@@ -32,4 +32,8 @@
 		splashHeight();
 	});
 	
+	viewport.resize(function() {
+		splashHeight();
+	});
+	
 })(jQuery);
