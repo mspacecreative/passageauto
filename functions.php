@@ -39,3 +39,4 @@ function customScripts()
 add_action('wp_enqueue_scripts', 'customScripts');
 
 include 'functions/tinymce.php';
+include 'functions/shortcodes.php';
