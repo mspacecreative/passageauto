@@ -21,17 +21,7 @@ if ( $loop->have_posts() ) {
 	    $width = $imgfield['sizes'][ $size . '-width' ];
 	    $height = $imgfield['sizes'][ $size . '-height' ];
 		$img = '<img src="' . esc_url($featuredproduct) . '" alt="' . esc_attr($alt) . '">';
-		if ( $leadintitle ) {
-		echo
-		'<div class="flex-full">
-			<h1>' . $leadintitle . '</h1>
-		</div>';
-		} else {
-		echo
-		'<div class="flex-full">
-			<h1>' .  __('Featured Product') . '</h1>
-		</div>';
-		}
+		
 		if ( $content ) {
 		echo
 		'<div class="featured-product-content">';
