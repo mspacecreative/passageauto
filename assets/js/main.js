@@ -3,6 +3,7 @@
 	var menItem = $('.et_mobile_menu li'),
 		mobileMenu = $('.et_mobile_menu'),
 		header = $('#main-header'),
+		splashContainer = $('.splash-container'),
 		splash = $('.splash'),
 		viewport = $(window);
 		
@@ -12,6 +13,10 @@
 	
 	function splashHeight() {
 		splash.height(viewport.height() - header.height());
+	}
+	
+	function splashContainerPadding() {
+		splashContainer.css('padding-top', header);
 	}
 	
 	// HIDE/SHOW HEADER ON SCROLL
@@ -30,10 +35,12 @@
 	
 	$(function ($) {
 		splashHeight();
+		splashContainerPadding();
 	});
 	
 	viewport.resize(function() {
 		splashHeight();
+		splashContainerPadding();
 	});
 	
 })(jQuery);
