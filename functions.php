@@ -38,5 +38,12 @@ function customScripts()
 }
 add_action('wp_enqueue_scripts', 'customScripts');
 
+// CUSTOM IMAGE SIZES
+if ( function_exists( 'add_theme_support' ) ) {
+
+    // Add Thumbnail Theme Support.
+    add_image_size( 'featured-product', 600, 600, true );
+}
+
 include 'functions/tinymce.php';
 include 'functions/shortcodes.php';

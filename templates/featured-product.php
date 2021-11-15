@@ -13,7 +13,11 @@ if ( $loop->have_posts() ) {
 		$loop->the_post();
 		$content = get_the_content(get_the_ID());
 		$imgfield = get_field('product_image', get_the_ID());
-		$img = '<img src=' . esc_url($imgfield['url']) . '" alt="' . esc_attr($imgfield['alt']) . '">';
+		$size = 'featured-product';
+		$featuredproduct = $imgfield['sizes'][ $size ];
+	    $width = $imgfield['sizes'][ $size . '-width' ];
+	    $height = $imgfield['sizes'][ $size . '-height' ];
+		$img = '<img src=' . esc_url($featuredproduct) . '" alt="' . esc_attr($alt) . '">';
 		if ( $content ) {
 		echo "
 		<div class'featured-product-content'>
