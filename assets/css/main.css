@@ -244,6 +244,11 @@ footer p a {
 		height: auto !important;
 	}
 	
+	.display-flex > div {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	
 	.logo-grid .display-flex .et_pb_column {
 		flex: 0 0 25%;
 		max-width: 25%;
