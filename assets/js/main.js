@@ -1,11 +1,18 @@
 (function($) {
 	// CLOSE MENU ON LINK CLICK
 	var menItem = $('.et_mobile_menu li'),
-		mobileMenu = $('.et_mobile_menu');
+		mobileMenu = $('.et_mobile_menu'),
+		header = $('#main-header'),
+		splash = $('.splash'),
+		viewport = $(window);
 		
 	menItem.click(function() {
 		mobileMenu.slideUp();
 	});
+	
+	function splashHeight() {
+		splash.height(viewport.height() - header);
+	}
 	
 	// HIDE/SHOW HEADER ON SCROLL
 	var lastScrollTop = 0;
@@ -19,6 +26,10 @@
 		}
 		
 		lastScrollTop = st;
+	});
+	
+	$(function ($) {
+		splashHeight();
 	});
 	
 })(jQuery);
