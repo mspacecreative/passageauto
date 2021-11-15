@@ -19,19 +19,19 @@ if ( $loop->have_posts() ) {
 	    $height = $imgfield['sizes'][ $size . '-height' ];
 		$img = '<img src=' . esc_url($featuredproduct) . '" alt="' . esc_attr($alt) . '">';
 		if ( $content ) {
-		echo "
-		<div class'featured-product-content'>
+		echo '
+		<div class"featured-product-content">
 			$content
-		</div>";
+		</div>';
 		}
 		if ( !empty($imgfield) ) {
-		echo"
-		<div class'featured-product-image'>
+		echo '
+		<div class"featured-product-image">
 			$img
 		</div>
-		";
+		';
 		}
 	}
-	echo "
-	</div>";
+	echo '
+	</div>';
 } wp_reset_query();
