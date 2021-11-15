@@ -11,6 +11,9 @@ if ( $loop->have_posts() ) {
 	<div class="featured-product-container display-flex align-items-center max-width-1080 top-bottom-padding">';
 	while ( $loop->have_posts() ) {
 		$loop->the_post();
+		$title = get_the_title(get_the_ID());
+		$showtitle = get_field('show_title', get_the_ID());
+		$leadintitle = get_field('leadin_title', get_the_ID());
 		$content = get_the_content(get_the_ID());
 		$imgfield = get_field('product_image', get_the_ID());
 		$size = 'featured-product';
@@ -18,10 +21,25 @@ if ( $loop->have_posts() ) {
 	    $width = $imgfield['sizes'][ $size . '-width' ];
 	    $height = $imgfield['sizes'][ $size . '-height' ];
 		$img = '<img src="' . esc_url($featuredproduct) . '" alt="' . esc_attr($alt) . '">';
+		if ( $leadintitle ) {
+		echo
+		'<div class="flex-full">
+			<h1>' . $leadintitle . '</h1>
+		</div>';
+		} else {
+		echo
+		'<div class="flex-full">
+			<h1>' .  __('Featured Product') . '</h1>
+		</div>';
+		}
 		if ( $content ) {
 		echo '
-		<div class="featured-product-content">
-			' . $content . '
+		<div class="featured-product-content">';
+			if ( $title && !$showtitle ) {
+			echo
+			'<h1>' .  $title . '</h1>';
+			}
+			. $content . '
 		</div>';
 		}
 		if ( !empty($imgfield) ) {
