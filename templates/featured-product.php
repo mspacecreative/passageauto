@@ -14,13 +14,13 @@ if ( $loop->have_posts() ) {
 		$content = get_the_content(get_the_ID());
 		$imgfield = get_field('product_image', get_the_ID());
 		$img = '<img src=' . esc_url($imgfield['url']) . '" alt="' . esc_attr($imgfield['alt']) . '">';
-		if ( !empty($content) ) {
+		if ( $content ) {
 		echo "
 		<div class'featured-product-content'>
 			$content
 		</div>";
 		}
-		if ( !empty($imgfield) {
+		if ( !empty($imgfield) ) {
 		echo"
 		<div class'featured-product-image'>
 			$img
