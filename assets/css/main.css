@@ -284,6 +284,10 @@ footer p a {
 		padding-bottom: 0;
 	}
 	
+	.flex-full h1 {
+		font-size: 18px;
+	}
+	
 	.featured-product-container .inner {
 		padding: 2em;
 	}
