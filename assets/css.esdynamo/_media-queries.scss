@@ -3,6 +3,10 @@
 	.last .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
 		padding-bottom: 0;
 	}
+	.top-bottom-padding {
+		padding-top: 4em;
+		padding-bottom: 4em;
+	}
 	.featured-product-content,
 	featured-product-image {
 		flex:  0 0 50%;
@@ -22,6 +26,10 @@
 	featured-product-image {
 		flex:  0 0 100%;
 		max-width: 100%;
+	}
+	.top-bottom-padding {
+		padding-top: 2em;
+		padding-bottom: 2em;
 	}
 	.logo-grid .display-flex .et_pb_column {
 		flex: 0 0 25%;
