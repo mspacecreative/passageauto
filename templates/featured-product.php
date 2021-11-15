@@ -40,7 +40,7 @@ if ( $loop->have_posts() ) {
 			echo
 			'<h2>' .  $title . '</h2>';
 			}
-			echo . $content .
+			echo $content .
 		'</div>';
 		}
 		if ( !empty($imgfield) ) {
