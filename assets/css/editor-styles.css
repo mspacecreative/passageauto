@@ -23,7 +23,7 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 
 .display-flex {
 	display: flex;
-	flex-wrap: wrap;
+	flex: 1;
 }
 
 .display-flex .et_pb_column {
