@@ -23,28 +23,28 @@ if ( $loop->have_posts() ) {
 		$img = '<img src="' . esc_url($featuredproduct) . '" alt="' . esc_attr($alt) . '">';
 		
 		if ( $leadintitle ) {
-		echo 
+		echo
 		'<div class="flex-full">
 			<h1>' . $leadintitle . '</h1>
 		</div>';
 		} else {
-		echo 
+		echo
 		'<div class="flex-full">
 			<h1>' .  __('Featured Product') . '</h1>
 		</div>';
 		}
 		if ( $content ) {
-		echo 
+		echo
 		'<div class="featured-product-content">';
 			if ( $title && !$showtitle ) {
-			echo 
+			echo
 			'<h2>' .  $title . '</h2>';
 			}
-			. $content .
+			echo . $content .
 		'</div>';
 		}
 		if ( !empty($imgfield) ) {
-		echo 
+		echo
 		'<div class="featured-product-image">
 			' . $img . '
 		</div>';
