@@ -24,6 +24,7 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 .display-flex {
 	display: flex;
 	flex: 1;
+	flex-wrap: wrap;
 }
 
 .display-flex .et_pb_column {
@@ -101,6 +102,10 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.35);
+}
+
+.text-align-center {
+	text-align: center;
 }
 
 .chrome-top-border, .chrome-bottom-border {

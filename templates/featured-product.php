@@ -13,6 +13,7 @@ if ( $loop->have_posts() ) {
 		$loop->the_post();
 		$title = get_the_title(get_the_ID());
 		$showtitle = get_field('hide_product_post_title', get_the_ID());
+		$bgcolor = get_field('background_colour', get_the_ID());
 		$leadintitle = get_field('leadin_title', get_the_ID());
 		$content = get_the_content(get_the_ID());
 		$imgfield = get_field('product_image', get_the_ID());
@@ -22,14 +23,28 @@ if ( $loop->have_posts() ) {
 	    $height = $imgfield['sizes'][ $size . '-height' ];
 		$img = '<img src="' . esc_url($featuredproduct) . '" alt="' . esc_attr($alt) . '">';
 		
+		switch ($bgcolor) {
+			case 'red':
+				$bgcolor = ' red-bg';
+				break;
+			case 'black':
+				$bgcolor = ' black-bg';
+				break;
+			case 'grey':
+				$bgcolor = ' grey-bg';
+				break;
+			default:
+				$bgcolor = '';
+		}
+		
 		if ( $leadintitle ) {
 		echo
-		'<div class="flex-full">
+		'<div class="flex-full text-align-center">
 			<h1>' . $leadintitle . '</h1>
 		</div>';
 		} else {
 		echo
-		'<div class="flex-full">
+		'<div class="flex-full text-align-center">
 			<h1>' .  __('Featured Product') . '</h1>
 		</div>';
 		}
