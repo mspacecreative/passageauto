@@ -27,7 +27,7 @@ if ( $loop->have_posts() ) {
 		if ( !empty($imgfield) ) {
 		echo '
 		<div class"featured-product-image">
-			$img
+			' . $img . '
 		</div>
 		';
 		}
