@@ -33,23 +33,22 @@ if ( $loop->have_posts() ) {
 		</div>';
 		}
 		if ( $content ) {
-		echo '
-		<div class="featured-product-content">';
+		echo
+		'<div class="featured-product-content">';
 			if ( $title && !$showtitle ) {
 			echo
-			'<h1>' .  $title . '</h1>';
+			'<h2>' .  $title . '</h2>';
 			}
-			. $content . '
-		</div>';
+			. $content .
+		'</div>';
 		}
 		if ( !empty($imgfield) ) {
-		echo '
-		<div class="featured-product-image">
+		echo
+		'<div class="featured-product-image">
 			' . $img . '
-		</div>
-		';
+		</div>';
 		}
 	}
-	echo '
-	</div>';
+	echo
+	'</div>';
 } wp_reset_query();
