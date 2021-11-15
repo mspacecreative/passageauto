@@ -35,7 +35,7 @@ if ( $loop->have_posts() ) {
 		if ( $content ) {
 		echo
 		'<div class="featured-product-content">';
-			if ( $title && !$showtitle ) {
+			if ( $title && !empty($showtitle) ) {
 			echo
 			'<h2>' .  $title . '</h2>';
 			}
