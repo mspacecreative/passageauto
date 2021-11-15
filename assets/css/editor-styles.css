@@ -91,7 +91,7 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 
 .featured-product-container .inner {
 	border: 2px solid #ff2323;
-	padding: 2em;
+	padding: 3em;
 }
 
 .light a {
@@ -200,9 +200,15 @@ footer p a {
 		padding-bottom: 4em;
 	}
 	
-	.featured-product-content, .featured-product-image {
+	.featured-product-image {
 		flex: 0 0 50%;
 		max-width: 50%;
+	}
+	
+	.featured-product-content {
+		flex: 0 0 40%;
+		max-width: 40%;
+		margin: 0 5%;
 	}
 }
 
@@ -218,6 +224,10 @@ footer p a {
 	.featured-product-content, featured-product-image {
 		flex: 0 0 100%;
 		max-width: 100%;
+	}
+	
+	.featured-product-content {
+		margin-bottom: 2em;
 	}
 	
 	.top-bottom-padding {

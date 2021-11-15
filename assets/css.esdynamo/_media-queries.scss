@@ -7,10 +7,14 @@
 		padding-top: 4em;
 		padding-bottom: 4em;
 	}
-	.featured-product-content,
 	.featured-product-image {
 		flex:  0 0 50%;
 		max-width: 50%;
+	}
+	.featured-product-content {
+		flex:  0 0 40%;
+		max-width: 40%;
+		margin: 0 5%;
 	}
 }
 
@@ -26,6 +30,9 @@
 	featured-product-image {
 		flex:  0 0 100%;
 		max-width: 100%;
+	}
+	.featured-product-content {
+		margin-bottom: 2em;
 	}
 	.top-bottom-padding {
 		padding-top: 2em;
