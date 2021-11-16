@@ -44,6 +44,9 @@
 	.splash {
 		height: auto!important;
 	}
+	.featured-product-container .inner {
+		padding-top: 4em;
+	}
 	.display-flex > div {
 		flex: 0 0 100%;
 		max-width: 100%;
@@ -96,6 +99,7 @@
 	}
 	.featured-product-container .inner {
 		padding: 2em;
+		padding-top: 3em;
 	}
 	.et_pb_svg_logo #logo, .et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo {
 		height: auto;
@@ -119,6 +123,7 @@
 	}
 	.featured-product-container .inner {
 		padding: 2em;
+		padding-top: 3em;
 	}
 	.et_pb_row .et_pb_column.et_pb_column_1_4.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_4:last-child, .et_pb_row .et_pb_column.et_pb_column_1_5.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_5:last-child, .et_pb_row .et_pb_column.et_pb_column_1_6.et-last-child, .et_pb_row .et_pb_column.et_pb_column_1_6:last-child,
 	.logo-grid .display-flex .et_pb_column {
