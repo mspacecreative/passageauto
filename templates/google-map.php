@@ -1,7 +1,7 @@
 <style type="text/css">
 .acf-map {
     width: 100%;
-    height: 400px;
+    height: 450px;
     border: #ccc solid 1px;
 }
 .acf-map img {
