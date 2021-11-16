@@ -34,12 +34,12 @@
 	});
 	
 	$(function ($) {
-		splashHeight();
+		//splashHeight();
 		splashContainerPadding();
 	});
 	
 	viewport.resize(function() {
-		splashHeight();
+		//splashHeight();
 		splashContainerPadding();
 	});
 	
