@@ -75,14 +75,22 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 .flex-full {
 	flex: 0 0 100%;
 	max-width: 100%;
-	margin-bottom: 2em;
-	margin-top: -4em;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 
 .flex-full h1 {
 	display: inline-block;
-	padding: 0 1em;
-	background-color: #fff;
+	padding: 10px 25px;
+	border: 2 px solid #ff2323;
+	background-color: #ff2323;
+	color: #fff;
+	border-radius: 30px;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .featured-product-container {
@@ -288,17 +296,8 @@ footer p a {
 		padding-bottom: 0;
 	}
 	
-	.flex-full h1 {
-		font-size: 16px;
-		text-transform: uppercase;
-	}
-	
 	.featured-product-container .inner {
 		padding: 2em;
-	}
-	
-	.flex-full {
-		margin-top: -2.8em;
 	}
 	
 	.et_pb_svg_logo #logo, .et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo {

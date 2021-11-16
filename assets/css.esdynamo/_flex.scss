@@ -55,13 +55,23 @@
 .flex-full {
 	flex: 0 0 100%;
 	max-width: 100%;
-	margin-bottom: 2em;
-	margin-top: -4em;
+	position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .flex-full h1 {
 	display: inline-block;
-    padding: 0 1em;
-    background-color: #fff;
+    padding: 10px 25px;
+	border: 2
+px
+ solid #ff2323;
+    background-color: #ff2323;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .featured-product-container {
 	padding-right: 2em;
