@@ -293,6 +293,11 @@ footer p a {
 		padding-bottom: 0;
 	}
 	
+	.flex-full {
+		width: 80%;
+		top: -17px;
+	}
+	
 	.flex-full h1 {
 		font-size: 14px;
 	}
