@@ -101,6 +101,7 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 .featured-product-container .inner {
 	border: 2px solid #ff2323;
 	padding: 3em;
+	position: relative;
 }
 
 .light a {
