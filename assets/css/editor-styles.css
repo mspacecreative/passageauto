@@ -215,10 +215,9 @@ footer p a {
 		flex-direction: column;
 	}
 	
-	.featured-product-content {
-		flex: 0 0 40%;
-		max-width: 40%;
-		margin: 0 5%;
+	.splash .et_pb_column {
+		flex: 0 0 50%;
+		max-width: 50%;
 	}
 }
 
