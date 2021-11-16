@@ -58,6 +58,10 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	justify-content: center;
 }
 
+.splash {
+	max-height: 900px;
+}
+
 .max-width-1080 {
 	max-width: 1080px;
 	margin-right: auto;
