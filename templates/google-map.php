@@ -1,171 +1,137 @@
-<script>
+<style type="text/css">
+.acf-map {
+    width: 100%;
+    height: 400px;
+    border: #ccc solid 1px;
+    margin: 20px 0;
+}
+.acf-map img {
+   max-width: inherit !important;
+}
+</style>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCujOyGnJ51jbeqAjKcABVDhE_n1WVzuWA"></script>
+<script type="text/javascript">
+(function( $ ) {
 
-(function($) {
+/**
+ * initMap
+ *
+ * Renders a Google Map onto the selected jQuery element
+ *
+ * @date    22/10/19
+ * @since   5.8.6
+ *
+ * @param   jQuery $el The jQuery element.
+ * @return  object The map instance.
+ */
+function initMap( $el ) {
 
-/*
-*  new_map
-*
-*  This function will render a Google Map onto the selected jQuery element
-*
-*  @type	function
-*  @date	8/11/2013
-*  @since	4.3.0
-*
-*  @param	$el (jQuery element)
-*  @return	n/a
-*/
+    // Find marker elements within map.
+    var $markers = $el.find('.marker');
 
-function new_map( $el ) {
+    // Create gerenic map.
+    var mapArgs = {
+        zoom        : $el.data('zoom') || 16,
+        mapTypeId   : google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map( $el[0], mapArgs );
 
-	// var
-	var $markers = $el.find('.marker');
+    // Add markers.
+    map.markers = [];
+    $markers.each(function(){
+        initMarker( $(this), map );
+    });
 
+    // Center map based on markers.
+    centerMap( map );
 
-	// vars
-	var args = {
-		zoom		: 16,
-		center		: new google.maps.LatLng(0, 0),
-		mapTypeId	: google.maps.MapTypeId.ROADMAP
-	};
-
-
-	// create map
-	var map = new google.maps.Map( $el[0], args);
-
-
-	// add a markers reference
-	map.markers = [];
-
-
-	// add markers
-	$markers.each(function(){
-
-    	add_marker( $(this), map );
-
-	});
-
-
-	// center map
-	center_map( map );
-
-
-	// return
-	return map;
-
+    // Return map instance.
+    return map;
 }
 
-/*
-*  add_marker
-*
-*  This function will add a marker to the selected Google Map
-*
-*  @type	function
-*  @date	8/11/2013
-*  @since	4.3.0
-*
-*  @param	$marker (jQuery element)
-*  @param	map (Google Map object)
-*  @return	n/a
-*/
+/**
+ * initMarker
+ *
+ * Creates a marker for the given jQuery element and map.
+ *
+ * @date    22/10/19
+ * @since   5.8.6
+ *
+ * @param   jQuery $el The jQuery element.
+ * @param   object The map instance.
+ * @return  object The marker instance.
+ */
+function initMarker( $marker, map ) {
 
-function add_marker( $marker, map ) {
+    // Get position from marker.
+    var lat = $marker.data('lat');
+    var lng = $marker.data('lng');
+    var latLng = {
+        lat: parseFloat( lat ),
+        lng: parseFloat( lng )
+    };
 
-	// var
-	var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
+    // Create marker instance.
+    var marker = new google.maps.Marker({
+        position : latLng,
+        map: map
+    });
 
-	// create marker
-	var marker = new google.maps.Marker({
-		position	: latlng,
-		map			: map
-	});
+    // Append to reference for later use.
+    map.markers.push( marker );
 
-	// add to array
-	map.markers.push( marker );
+    // If marker contains HTML, add it to an infoWindow.
+    if( $marker.html() ){
 
-	// if marker contains HTML, add it to an infoWindow
-	if( $marker.html() )
-	{
-		// create info window
-		var infowindow = new google.maps.InfoWindow({
-			content		: $marker.html()
-		});
+        // Create info window.
+        var infowindow = new google.maps.InfoWindow({
+            content: $marker.html()
+        });
 
-		// show info window when marker is clicked
-		google.maps.event.addListener(marker, 'click', function() {
-
-			infowindow.open( map, marker );
-
-		});
-	}
-
+        // Show info window when marker is clicked.
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open( map, marker );
+        });
+    }
 }
 
-/*
-*  center_map
-*
-*  This function will center the map, showing all markers attached to this map
-*
-*  @type	function
-*  @date	8/11/2013
-*  @since	4.3.0
-*
-*  @param	map (Google Map object)
-*  @return	n/a
-*/
+/**
+ * centerMap
+ *
+ * Centers the map showing all markers in view.
+ *
+ * @date    22/10/19
+ * @since   5.8.6
+ *
+ * @param   object The map instance.
+ * @return  void
+ */
+function centerMap( map ) {
 
-function center_map( map ) {
+    // Create map boundaries from all map markers.
+    var bounds = new google.maps.LatLngBounds();
+    map.markers.forEach(function( marker ){
+        bounds.extend({
+            lat: marker.position.lat(),
+            lng: marker.position.lng()
+        });
+    });
 
-	// vars
-	var bounds = new google.maps.LatLngBounds();
+    // Case: Single marker.
+    if( map.markers.length == 1 ){
+        map.setCenter( bounds.getCenter() );
 
-	// loop through all markers and create bounds
-	$.each( map.markers, function( i, marker ){
-
-		var latlng = new google.maps.LatLng( marker.position.lat(), marker.position.lng() );
-
-		bounds.extend( latlng );
-
-	});
-
-	// only 1 marker?
-	if( map.markers.length == 1 )
-	{
-		// set center of map
-	    map.setCenter( bounds.getCenter() );
-	    map.setZoom( 16 );
-	}
-	else
-	{
-		// fit to bounds
-		  map.setCenter( bounds.getCenter() );
-	   	map.setZoom( 2 ); // Change the zoom value as required
-		//map.fitBounds( bounds ); // This is the default setting which I have uncommented to stop the World Map being repeated
-
-	}
-
+    // Case: Multiple markers.
+    } else{
+        map.fitBounds( bounds );
+    }
 }
 
-/*
-*  document ready
-*
-*  This function will render each map when the document is ready (page has loaded)
-*
-*  @type	function
-*  @date	8/11/2013
-*  @since	5.0.0
-*
-*  @param	n/a
-*  @return	n/a
-*/
-// global var
-var map = null;
-
-jQuery(document).ready(function($){
-
-	$('.acf-map').each(function(){
-		map = new_map( $(this) );
-
-	});
+// Render maps on page load.
+$(document).ready(function(){
+    $('.acf-map').each(function(){
+        var map = initMap( $(this) );
+    });
 });
 
 })(jQuery);
@@ -175,6 +141,6 @@ $map = get_field('location', 'options');
 if ($map) {
 	echo 
 	'<div class="acf-map" data-zoom="16">
-		<div class="marker" data-lat="' . esc_attr($location['lat']) . '" data-lng="' . esc_attr($location['lng']) . '"></div>
+		<div class="marker" data-lat="' . esc_attr($map['lat']) . '" data-lng="' . esc_attr($map['lng']) . '"></div>
 	</div>';
 }
