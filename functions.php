@@ -47,3 +47,4 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 include 'functions/tinymce.php';
 include 'functions/shortcodes.php';
+include 'functions/acf.php';
