@@ -30,7 +30,7 @@ function initMap( $el ) {
 
     // Create gerenic map.
     var mapArgs = {
-        zoom        : $el.data('zoom') || 16,
+        zoom        : $el.data('zoom') || 15,
         mapTypeId   : google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map( $el[0], mapArgs );
@@ -139,7 +139,7 @@ $(document).ready(function(){
 $map = get_field('location', 'options');
 if ($map) {
 	echo 
-	'<div class="acf-map" data-zoom="16">
+	'<div class="acf-map" data-zoom="15">
 		<div class="marker" data-lat="' . esc_attr($map['lat']) . '" data-lng="' . esc_attr($map['lng']) . '"></div>
 	</div>';
 }
