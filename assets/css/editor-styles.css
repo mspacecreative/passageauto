@@ -245,6 +245,11 @@ footer p a {
 		padding-bottom: 2em;
 	}
 	
+	.featured-product-container.top-bottom-padding {
+		padding-top: 4em;
+		padding-bottom: 4em;
+	}
+	
 	.splash {
 		height: auto !important;
 	}
