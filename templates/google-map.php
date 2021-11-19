@@ -2,7 +2,6 @@
 .acf-map {
     width: 100%;
     height: 450px;
-    border: #ccc solid 1px;
 }
 .acf-map img {
    max-width: inherit !important;
