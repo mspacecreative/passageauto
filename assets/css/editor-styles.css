@@ -100,6 +100,11 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	position: relative;
 }
 
+.col {
+	flex: 0 0 50%;
+	display: flex;
+}
+
 .light a {
 	color: #fff;
 }

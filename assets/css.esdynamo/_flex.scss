@@ -78,3 +78,8 @@ px
     padding: 3em;
 	position: relative;
 }
+
+.col {
+	flex: 0 0 50%;
+    display: flex;
+}
