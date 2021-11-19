@@ -42,6 +42,12 @@
 	margin-right: auto;
 	margin-left: auto;
 }
+.max-width-1080 {
+	max-width: 1440px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+}
 
 // FEATURED PRODUCT IMAGE
 .featured-product-image img {
@@ -70,12 +76,12 @@ px
     letter-spacing: 1px;
 }
 .featured-product-container {
-	padding-right: 2em;
-	padding-left: 2em;
+	//padding-right: 2em;
+	//padding-left: 2em;
 }
 .featured-product-container .inner {
 	border: 2px solid #ff2323;
-    padding: 3em;
+    padding: 3em 2em 2em;
 	position: relative;
 	justify-content: space-between;
 }
