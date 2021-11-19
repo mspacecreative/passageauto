@@ -1,3 +1,20 @@
+@media (max-width: 1024px) {
+	.featured-product-content,
+	.featured-product-image {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	
+	.flex-full {
+		width: 80%;
+	}
+	.featured-product-image {
+		margin-top: auto;
+	}
+	.featured-product-content {
+		margin-bottom: 1em;
+	}
+}
 @media (min-width: 981px) {
 	.last .et_pb_column:nth-child(4n+1):nth-last-child(-n+4),
 	.last .et_pb_column:nth-child(4n+1):nth-last-child(-n+4) ~ .et_pb_column {
@@ -99,7 +116,6 @@
 		padding-bottom: 0;
 	}
 	.flex-full {
-		width: 80%;
 		top: -17px;
 	}
 	.col {
