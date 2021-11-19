@@ -15,13 +15,13 @@
 		flex-direction: column;
 	}
 	.splash .et_pb_column {
-		flex:  0 0 50%;
-		max-width: 50%;
-	}
-	.featured-product-content {
 		flex:  0 0 40%;
 		max-width: 40%;
-		margin: 0 5%;
+	}
+	.featured-product-content {
+		flex:  0 0 45%;
+		max-width: 45%;
+		//margin: 0 5%;
 	}
 }
 

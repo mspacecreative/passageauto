@@ -98,6 +98,7 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	border: 2px solid #ff2323;
 	padding: 3em;
 	position: relative;
+	justify-content: space-between;
 }
 
 .col {
@@ -269,14 +270,13 @@ footer p a {
 	}
 	
 	.splash .et_pb_column {
-		flex: 0 0 50%;
-		max-width: 50%;
+		flex: 0 0 40%;
+		max-width: 40%;
 	}
 	
 	.featured-product-content {
-		flex: 0 0 40%;
-		max-width: 40%;
-		margin: 0 5%;
+		flex: 0 0 45%;
+		max-width: 45%;
 	}
 }
 
