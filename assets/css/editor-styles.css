@@ -418,6 +418,14 @@ footer p a {
 		padding-top: 3em;
 	}
 	
+	.col {
+		margin-bottom: 2em;
+	}
+	
+	.col:last-of-type {
+		margin-bottom: 0;
+	}
+	
 	.display-flex > div {
 		flex: 0 0 100%;
 		max-width: 100%;
