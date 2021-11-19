@@ -11,8 +11,9 @@
 .align-items-center {
 	align-items: center;
 }
+.splash > .et_pb_column_0,
 .splash > .et_pb_column {
-	height: auto;
+	height: auto!important;
 }
 .splash .et_pb_image_wrap,
 .splash .et_pb_image_wrap img {

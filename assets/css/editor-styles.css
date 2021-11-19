@@ -31,8 +31,8 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	align-items: center;
 }
 
-.splash > .et_pb_column {
-	height: auto;
+.splash > .et_pb_column_0, .splash > .et_pb_column {
+	height: auto !important;
 }
 
 .splash .et_pb_image_wrap, .splash .et_pb_image_wrap img {
