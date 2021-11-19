@@ -28,7 +28,7 @@ function promo_item($promotype = '') {
 			    $width = $imgfield['sizes'][ $size . '-width' ];
 			    $height = $imgfield['sizes'][ $size . '-height' ];
 			    $alt = $imgfield['alt'];
-			    $altresult = ($alt) ? esc_attr($alt) : esc_html_e('Passage Auto Parts');
+			    $altresult = ($alt ? esc_attr($alt) : esc_html_e('Passage Auto Parts'));
 				$img = '<img src="' . esc_url($featuredproduct) . '" alt="' . $altresult . '">';
 				
 				switch ($bgcolor) {
