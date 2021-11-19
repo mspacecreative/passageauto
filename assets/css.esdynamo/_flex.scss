@@ -92,3 +92,11 @@ px
 	padding-left: 1em;
 	padding-right: 1em;
 }
+.gutter-space-2 {
+	margin-left: -2em;
+	margin-right: -2em;
+}
+.gutter-space-2 > .col {
+	padding-left: 2em;
+	padding-right: 2em;
+}

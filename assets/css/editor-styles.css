@@ -115,6 +115,16 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	padding-right: 1em;
 }
 
+.gutter-space-2 {
+	margin-left: -2em;
+	margin-right: -2em;
+}
+
+.gutter-space-2 > .col {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
 .light a {
 	color: #fff;
 }
