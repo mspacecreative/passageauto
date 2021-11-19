@@ -121,6 +121,13 @@
 	.logo-grid .last .et_pb_column:nth-child(2n+1):nth-last-child(-n+2) ~ .et_pb_column {
 		padding-bottom: 0;
 	}
+	.featured-product-container {
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	.max-width-1440 {
+		width: 100%;
+	}
 	.flex-full {
 		top: -17px;
 	}

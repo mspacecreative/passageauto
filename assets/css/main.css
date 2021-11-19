@@ -404,6 +404,15 @@ footer p a {
 		padding-bottom: 0;
 	}
 	
+	.featured-product-container {
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	
+	.max-width-1440 {
+		width: 100%;
+	}
+	
 	.flex-full {
 		top: -17px;
 	}
