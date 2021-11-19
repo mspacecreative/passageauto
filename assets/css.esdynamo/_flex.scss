@@ -15,7 +15,7 @@
 .splash > .et_pb_column {
 	height: auto!important;
 }
-.splash > div > .et_pb_module {
+.splash > div > .et_pb_module:first-of-type {
 	height: 100%;
 }
 .splash .et_pb_image_wrap,
