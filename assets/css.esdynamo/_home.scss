@@ -28,10 +28,18 @@
 	border-bottom-width: 5px;
 }
 
+.entry-content .splash table:not(.variations) thead tr {
+	border-bottom: none;
+}
+
 .entry-content .splash table:not(.variations) td:nth-of-type(odd), body.et-pb-preview #main-content .container .splash table td:nth-of-type(odd) {
 	border-right: 1px solid #555;
 }
 
-.entry-content .splash table:not(.variations) tr:first-of-type td:nth-of-type(odd), body.et-pb-preview #main-content .container .splash table tr:first-of-type td:nth-of-type(odd) {
+.entry-content .splash table:not(.variations) td, body.et-pb-preview #main-content .container .splash table td {
+	border-top: none;
+}
+
+.entry-content .splash table:not(.variations) thead tr td:nth-of-type(odd), body.et-pb-preview #main-content .container .splash table tr td:nth-of-type(odd) {
 	border-right: none;
 }
