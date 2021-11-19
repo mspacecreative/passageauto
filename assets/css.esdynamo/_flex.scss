@@ -81,5 +81,14 @@ px
 
 .col {
 	flex: 0 0 50%;
-    display: flex;
+	max-width: 50%;
+}
+
+.gutter-space-1 {
+	margin-left: -1em;
+	margin-right: -1em;
+}
+.gutter-space-1 > .col {
+	padding-left: 1em;
+	padding-right: 1em;
 }

@@ -102,6 +102,10 @@
 		width: 80%;
 		top: -17px;
 	}
+	.col {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
 	.flex-full h1 {
 		font-size: 14px;
 	}
