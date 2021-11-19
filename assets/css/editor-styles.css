@@ -153,6 +153,10 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	text-align: center;
 }
 
+h2, h3 {
+	line-height: 1.35em;
+}
+
 .chrome-top-border, .chrome-bottom-border {
 	position: relative;
 }
