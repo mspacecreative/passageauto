@@ -48,4 +48,4 @@ if ( function_exists( 'add_theme_support' ) ) {
 include 'functions/tinymce.php';
 include 'functions/shortcodes.php';
 include 'functions/acf.php';
-//include 'functions/actions-filters.php';
+include 'functions/promotions.php';
