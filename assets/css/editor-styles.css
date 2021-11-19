@@ -329,6 +329,10 @@ footer p a {
 		margin-bottom: 30px;
 	}
 	
+	.flex-full h1 {
+		font-size: 14px;
+	}
+	
 	.featured-product-content, featured-product-image {
 		flex: 0 0 100%;
 		max-width: 100%;
@@ -407,10 +411,6 @@ footer p a {
 	.col {
 		flex: 0 0 100%;
 		max-width: 100%;
-	}
-	
-	.flex-full h1 {
-		font-size: 14px;
 	}
 	
 	.featured-product-container .inner {
