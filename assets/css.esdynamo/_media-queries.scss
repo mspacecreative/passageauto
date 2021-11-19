@@ -53,6 +53,9 @@
 	.et_pb_row_1-2_1-4_1-4 .et_pb_column:nth-last-child(-n+2), .et_pb_row_1-4_1-4 .et_pb_column:nth-last-child(-n+2), .et_pb_row_4col .et_pb_column:nth-last-child(-n+2) {
 		margin-bottom: 30px;
 	}
+	.flex-full h1 {
+		font-size: 14px;
+	}
 	.featured-product-content,
 	featured-product-image {
 		flex:  0 0 100%;
@@ -124,9 +127,6 @@
 	.col {
 		flex: 0 0 100%;
 		max-width: 100%;
-	}
-	.flex-full h1 {
-		font-size: 14px;
 	}
 	.featured-product-container .inner {
 		padding: 2em;
