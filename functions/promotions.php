@@ -60,13 +60,13 @@ function promo_item($promotype = '') {
 				}
 				if ( $title && !$showtitle ) {
 					echo
-					'<div class="flex-full-reg">
-						<h2 style="font-weight: bold; color: #ff2323;">' .  $title . '</h2>
-					</div>';
+					'<h2 style="font-weight: bold; color: #ff2323;">' .  $title . '</h2>';
 				}
 				if ( $price ) {
 					echo
-					'<h3 style="margin: 1em 0; font-weight: bold;">' .  $dollarsign, $price . '</h3>';
+					'<div class="flex-full-reg">
+						<h3 style="margin: 1em 0; font-weight: bold;">' .  __($dollarsign), $price . '</h3>
+					</div>';
 				}
 				if ( $content ) {
 				echo
