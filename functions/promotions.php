@@ -77,7 +77,8 @@ function promo_item($promotype = '') {
 					if ($flyerpdf) {
 						echo 
 						'<a class="et_pb_button" href="' . $flyerpdf['url'] . '" target="_blank">' . __($downloadflyer) . '</a>';
-					} .
+					}
+				echo
 				'</div>';
 				}
 				if ( !empty($imgfield) ) {
