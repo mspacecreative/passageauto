@@ -74,6 +74,10 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
+.flex-full-reg {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
 .flex-full h1 {
 	display: inline-block;
     padding: 10px 25px;
