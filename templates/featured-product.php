@@ -13,7 +13,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="flyer-container">
+	<div id="flyer-container" class="max-width: 1440px flyer-container">
 		<?php 
 		$flyerpdf = get_field('flyer_pdf', 216);
 		echo do_shortcode('[pdf-embedder url="' . $flyerpdf['url'] . '"]'); ?>

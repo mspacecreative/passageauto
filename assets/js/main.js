@@ -2,8 +2,8 @@
 	// REVEAL FLYER CONTAINER ON CLICK
 	var pdfContainer = $('.flyer-container'),
 		viewPDFButton = $('.view-pdf-container');
-	viewPDFButton.click(function(e) {
-		e.preventDefault();
+	viewPDFButton.click(function() {
+		//e.preventDefault();
 		pdfContainer.slideDown();
 	});
 	
