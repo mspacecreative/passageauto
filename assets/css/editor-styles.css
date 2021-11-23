@@ -109,21 +109,23 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	background-color: rgba(0, 0, 0, 0.75);
 	height: 100%;
 	width: 100%;
-	content: "\f35d";
+	content: "";
 	visibility: hidden;
 	opacity: 0;
 	transition: 0.4s ease-in-out;
+	top: 0;
+	left: 0;
 }
 
 .view-pdf-container:after {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -25px;
-	margin-left: -25px;
-	height: 100%;
-	width: 100%;
-	content: "";
+	margin-top: -13px;
+	margin-left: -13px;
+	height: 26px;
+	width: 26px;
+	content: "\f35d";
 	font-family: fontAwesome;
 	visibility: hidden;
 	opacity: 0;
