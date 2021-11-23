@@ -83,7 +83,7 @@ function promo_item($promotype = '') {
 				}
 				if ( !empty($imgfield) ) {
 				echo
-				'<div class="featured-product-image">';
+				'<div class="featured-product-image'; if ($flyerpdf): echo ' box-shadow'; endif; echo '">';
 					if ($flyerpdf): echo '
 					<a href="' . $flyerpdf['url'] . '" class="view-pdf-container" target="_blank">'; endif;
 						echo  $img;
