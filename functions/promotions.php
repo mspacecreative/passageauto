@@ -32,7 +32,7 @@ function promo_item($promotype = '') {
 			    $altresult = ($alt) ? esc_attr($alt) : __('Passage Auto Parts');
 				$img = '<img src="' . esc_url($featuredproduct) . '" alt="' . $altresult . '">';
 				$dollarsign = '&#36;';
-				$downloadflyer = 'Download flyer';
+				$downloadflyer = 'View flyer';
 				$flyerpdf = get_field('flyer_pdf', get_the_ID());
 				
 				switch ($bgcolor) {
