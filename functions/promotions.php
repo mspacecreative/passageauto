@@ -31,6 +31,7 @@ function promo_item($promotype = '') {
 			    $alt = $imgfield['alt'];
 			    $altresult = ($alt) ? esc_attr($alt) : __('Passage Auto Parts');
 				$img = '<img src="' . esc_url($featuredproduct) . '" alt="' . $altresult . '">';
+				$dollarsign = '&#36;';
 				
 				switch ($bgcolor) {
 					case 'red':
@@ -65,7 +66,7 @@ function promo_item($promotype = '') {
 				}
 				if ( $price ) {
 					echo
-					'<h3 style="margin: 1em 0; font-weight: bold;">' .  __('$'), $price . '</h3>';
+					'<h3 style="margin: 1em 0; font-weight: bold;">' .  __($dollarsign), $price . '</h3>';
 				}
 				if ( $content ) {
 				echo
