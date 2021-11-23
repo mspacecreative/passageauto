@@ -67,7 +67,7 @@ function promo_item($promotype = '') {
 				if ( $price ) {
 					echo
 					'<div class="flex-full-reg">
-						<h3 style="margin: 1em 0; font-weight: bold; padding-bottom: 0;">' .  __($dollarsign), $price . '</h3>
+						<h3 style="margin: 0 0 1em; font-weight: bold; padding-bottom: 0;">' .  __($dollarsign), $price . '</h3>
 					</div>';
 				}
 				if ( $content ) {
