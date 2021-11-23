@@ -177,8 +177,17 @@ h2, h3 {
 	line-height: 1.35em;
 }
 
-.featured-product-content ul {
+.entry-content .featured-product-content ul {
 	padding-bottom: 0;
+	line-height: 1.25em;
+}
+
+.entry-content .featured-product-content li {
+	margin-bottom: .5em;
+}
+
+.entry-content .featured-product-content li:last-of-type {
+	margin-bottom: 0;
 }
 
 .chrome-top-border, .chrome-bottom-border {
