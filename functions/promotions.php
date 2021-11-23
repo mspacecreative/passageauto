@@ -63,7 +63,7 @@ function promo_item($promotype = '') {
 				}
 				if ( $price ) {
 					echo
-					'<h3 style="margin: 1em 0; font-weight: bold;">' .  __('$') $price . '</h3>';
+					'<h3 style="margin: 1em 0; font-weight: bold;">' .  __('$'), $price . '</h3>';
 				}
 				if ( $content ) {
 				echo
