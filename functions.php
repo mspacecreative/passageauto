@@ -27,6 +27,9 @@ function customStyles()
     
     wp_register_script('mainjs', get_stylesheet_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
     wp_enqueue_style('mainjs');
+    
+    wp_register_style( 'fontawesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null );
+	wp_enqueue_style( 'fontawesome' );
 }
 add_action('wp_enqueue_scripts', 'customStyles');
 

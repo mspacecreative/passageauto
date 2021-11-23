@@ -72,6 +72,8 @@
 .view-pdf-container {
 	display: block;
 	position: relative;
+	overflow: hidden;
+	transition: 0.4s ease-in-out;
 }
 .view-pdf-container:hover:before,
 .view-pdf-container:hover:after {
