@@ -84,6 +84,10 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	width: 80%;
 }
 
+.flyer-container {
+	display: none;
+}
+
 .featured-product-image img {
 	display: block;
 }

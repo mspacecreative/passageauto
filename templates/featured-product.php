@@ -13,5 +13,9 @@
 			</div>
 		</div>
 	</div>
+	<div class="flyer-container">
+		<?php 
+		echo do_shortcode('[pdf id="238"]'); ?>
+	</div>
 </div>
 	

@@ -1,4 +1,11 @@
 (function($) {
+	// REVEAL FLYER CONTAINER ON CLICK
+	var pdfContainer = $('.flyer-container'),
+		viewPDFButton = $('.view-pdf-container');
+	viewPDFButton.click(function() {
+		pdfContainer.slideDown();
+	});
+	
 	// CLOSE MENU ON LINK CLICK
 	var menItem = $('.et_mobile_menu li'),
 		mobileMenu = $('.et_mobile_menu'),
