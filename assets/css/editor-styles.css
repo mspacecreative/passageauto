@@ -91,6 +91,9 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 .featured-product-image {
 	overflow: hidden;
 	position: relative;
+}
+
+.box-shadow {
 	box-shadow: 0 5px 10px #999;
 }
 
