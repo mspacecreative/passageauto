@@ -62,7 +62,7 @@ function promo_item($promotype = '') {
 				}
 				if ( $title && !$showtitle ) {
 					echo
-					'<h2 style="font-weight: bold; color: #ff2323; padding-bottom: 0;">' .  $title . '</h2>';
+					'<h2 style="font-weight: bold; color: #ff2323; padding-bottom: 0; margin-bottom: 1em;">' .  $title . '</h2>';
 				}
 				if ( $price ) {
 					echo
