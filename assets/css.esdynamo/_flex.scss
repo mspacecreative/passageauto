@@ -92,6 +92,7 @@
 	transition: 0.4s ease-in-out;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 .view-pdf-container:after {
 	position: absolute;
@@ -107,6 +108,7 @@
 	opacity: 0;
 	transition: 0.4s ease-in-out;
 	color: #fff;
+	z-index: 2;
 }
 .view-pdf-container img {
 	transition: 0.4s ease-in-out;
