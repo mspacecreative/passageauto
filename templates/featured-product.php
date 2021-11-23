@@ -7,7 +7,7 @@
 				</div>
 			</div>
 			<div class="col display-flex">
-				<div class="inner display-flex align-items-center">
+				<div class="inner display-flex">
 					<?php promo_item('flyer'); ?>
 				</div>
 			</div>

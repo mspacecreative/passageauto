@@ -76,7 +76,7 @@ function promo_item($promotype = '') {
 					echo $content;
 					if ($flyerpdf) {
 						echo 
-						'<p><a class="et_pb_button" href="' . $flyerpdf['url'] . '" target="_blank">' . __($downloadflyer) . '</a></p>';
+						'<p><a class="et_pb_button" href="' . $flyerpdf['url'] . '" target="_blank" style="display: inline-block; margin-top: 1em;">' . __($downloadflyer) . '</a></p>';
 					}
 				echo
 				'</div>';
