@@ -139,6 +139,10 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	justify-content: space-between;
 }
 
+.align-middle {
+	justify-content: center;
+}
+
 .col {
 	flex: 0 0 50%;
 	max-width: 50%;
