@@ -56,13 +56,13 @@ function promo_item($promotype = '') {
 					<h1>' .  __('Featured Product') . '</h1>
 				</div>';
 				}
+				if ( $title && !$showtitle ) {
+					echo
+					'<h2 style="margin-bottom: 1em; font-weight: bold; color: #ff2323;">' .  $title . '</h2>';
+				}
 				if ( $content ) {
 				echo
 				'<div class="featured-product-content">';
-					if ( $title && !$showtitle ) {
-					echo
-					'<h2 style="margin-bottom: 1em; font-weight: bold; color: #ff2323;">' .  $title . '</h2>';
-					}
 					echo $content .
 				'</div>';
 				}
