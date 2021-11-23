@@ -15,7 +15,7 @@
 	</div>
 	<div class="flyer-container">
 		<?php 
-		$flyerpdf = get_field('flyer_pdf', get_the_ID());
+		$flyerpdf = get_field('flyer_pdf', 216);
 		echo do_shortcode('[pdf-embedder url="' . $flyerpdf['url'] . '"]'); ?>
 	</div>
 </div>
