@@ -18,6 +18,7 @@ function promo_item($promotype = '') {
 		while ( $loop->have_posts() ) {
 				$loop->the_post();
 				$title = get_the_title(get_the_ID());
+				$price = get_field('price', get_the_ID());
 				$showtitle = get_field('hide_product_post_title', get_the_ID());
 				$bgcolor = get_field('background_colour', get_the_ID());
 				$leadintitle = get_field('leadin_title', get_the_ID());
@@ -59,6 +60,10 @@ function promo_item($promotype = '') {
 				if ( $title && !$showtitle ) {
 					echo
 					'<h2 style="margin-bottom: 1em; font-weight: bold; color: #ff2323;">' .  $title . '</h2>';
+				}
+				if ( $price ) {
+					echo
+					'<h3 style="margin: 1em 0; font-weight: bold;">' .  $price . '</h3>';
 				}
 				if ( $content ) {
 				echo
