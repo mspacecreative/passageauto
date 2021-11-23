@@ -65,6 +65,17 @@
 .flyer-container {
 	display: none;
 }
+.featured-product-image {
+	overflow: hidden;
+	position: relative;
+}
+.view-pdf-container {
+	transition: 0.4s ease-in-out;
+}
+.view-pdf-container:hover {
+	transform: scale(1.1);
+	transition: 0.4s ease-in-out;
+}
 
 // FEATURED PRODUCT IMAGE
 .featured-product-image img {

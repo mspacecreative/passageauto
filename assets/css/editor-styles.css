@@ -88,6 +88,20 @@ body.et_pb_button_helper_class .et_pb_button, body.et_pb_button_helper_class .et
 	display: none;
 }
 
+.featured-product-image {
+	overflow: hidden;
+	position: relative;
+}
+
+.view-pdf-container {
+	transition: 0.4s ease-in-out;
+}
+
+.view-pdf-container:hover {
+	transform: scale(1.1);
+	transition: 0.4s ease-in-out;
+}
+
 .featured-product-image img {
 	display: block;
 }
