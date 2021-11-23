@@ -32,6 +32,8 @@ function promo_item($promotype = '') {
 			    $altresult = ($alt) ? esc_attr($alt) : __('Passage Auto Parts');
 				$img = '<img src="' . esc_url($featuredproduct) . '" alt="' . $altresult . '">';
 				$dollarsign = '&#36;';
+				$downloadflyer = 'Download flyer';
+				$flyerpdf = get_field('flyer_pdf', get_the_ID());
 				
 				switch ($bgcolor) {
 					case 'red':
@@ -71,7 +73,11 @@ function promo_item($promotype = '') {
 				if ( $content ) {
 				echo
 				'<div class="featured-product-content">';
-					echo $content .
+					echo $content;
+					if ($flyerpdf) {
+						echo 
+						'<a class="et_pb_button" href="' . $flyerpdf['url'] . '" target="_blank">' . __($downloadflyer) . '</a>';
+					} .
 				'</div>';
 				}
 				if ( !empty($imgfield) ) {

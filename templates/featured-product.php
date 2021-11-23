@@ -2,7 +2,7 @@
 	<div class="max-width-1440 top-bottom-padding">
 		<div class="display-flex gutter-space-2">
 			<div class="col display-flex">
-				<div class="inner display-flex align-items-center">
+				<div class="inner display-flex">
 					<?php promo_item('featured-product'); ?>
 				</div>
 			</div>
