@@ -1,11 +1,13 @@
 (function($) {
+	/*
 	// REVEAL FLYER CONTAINER ON CLICK
 	var pdfContainer = $('.flyer-container'),
 		viewPDFButton = $('.view-pdf-container');
-	viewPDFButton.click(function() {
-		//e.preventDefault();
+	viewPDFButton.click(function(e) {
+		e.preventDefault();
 		pdfContainer.slideDown();
 	});
+	*/
 	
 	// CLOSE MENU ON LINK CLICK
 	var menItem = $('.et_mobile_menu li'),

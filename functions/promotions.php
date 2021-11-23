@@ -85,7 +85,7 @@ function promo_item($promotype = '') {
 				echo
 				'<div class="featured-product-image">';
 					if ($flyerpdf): echo '
-					<a href="#flyer-container" class="view-pdf-container">'; endif;
+					<a href="' . $flyerpdf['url'] . '" class="view-pdf-container" target="_blank">'; endif;
 						echo  $img;
 					if ($flyerpdf): echo '
 					</a>'; endif;
