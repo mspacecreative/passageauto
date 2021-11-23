@@ -292,6 +292,7 @@ h2, h3 {
 
 .entry-content .splash table:not(.variations), body.et-pb-preview #main-content .container .splash table {
 	border: 1px solid #555;
+	max-width: 800px;
 }
 
 .entry-content .splash table:not(.variations) thead tr {
