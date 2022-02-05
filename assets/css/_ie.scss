@@ -1,0 +1,25 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.et_animated, :not(.et_pb_counters).et-waypoint {
+		opacity: 1;
+	}
+	#page-container {
+		overflow-x: hidden;
+	}
+	#footer-widgets {
+		display: flex;
+		flex: 1;
+		justify-content: space-between;
+	}
+	footer .container {
+		padding: 4em 0 3em;
+	}
+	#footer-bottom {
+		background-color: #000;
+	}
+	#footer-bottom .container {
+		padding: 1em 0;
+	}
+	#our-story {
+		background-color: #000;
+	}
+}

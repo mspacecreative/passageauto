@@ -62,6 +62,8 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 	</div> <!-- #page-container -->
 
-	<?php wp_footer(); ?>
+	<?php 
+	echo do_shortcode('[staff_bios]');
+	wp_footer(); ?>
 </body>
 </html>

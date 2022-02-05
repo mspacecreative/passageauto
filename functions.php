@@ -46,9 +46,14 @@ if ( function_exists( 'add_theme_support' ) ) {
 
     // Add Thumbnail Theme Support.
     add_image_size( 'featured-product', 600, 600, true );
+	add_image_size('promo-flyer', 612, 792, true);
 }
 
 include 'functions/tinymce.php';
 include 'functions/shortcodes.php';
 include 'functions/acf.php';
 include 'functions/promotions.php';
+include 'functions/top-header.php';
+include 'functions/main-navigation.php';
+include 'functions/brand-grid.php';
+include 'functions/hide-post-menu-item.php';

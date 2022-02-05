@@ -14,3 +14,19 @@ function google_map() {
 	return ob_get_clean();
 }
 add_shortcode( 'google_map', 'google_map' );
+
+// BIOS
+function staff_bios() {
+	ob_start();
+		get_template_part('templates/staff-bios');
+	return ob_get_clean();
+}
+add_shortcode( 'staff_bios', 'staff_bios' );
+
+// BRANDS GRID
+function brand_grid() {
+	ob_start();
+	brands_grid('brand');
+	return ob_get_clean();
+}
+add_shortcode( 'brand_grid', 'brand_grid' );
