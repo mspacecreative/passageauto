@@ -119,6 +119,7 @@ html.menOpen, body.menuOpen {
 	right: 30px;
 	position: fixed;
 	top: 18px;
+	transition: all 0.4s ease-in-out;
 }
 .down .hamburger {
     transform: translateY(-50px);
