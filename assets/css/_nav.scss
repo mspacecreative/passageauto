@@ -347,3 +347,9 @@ html.menOpen, body.menuOpen {
 	color: #999;
 	display: block;
 }
+
+@media (min-width: 481px) and (orientation: portrait) {
+	.hamburger {
+		top: 75px;
+	}
+}
