@@ -35,6 +35,9 @@ header.et-fixed-header > .container {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+.et_header_style_left .et-fixed-header #et-top-navigation {
+	padding-top: 0;
+}
 #top-header .container,
 #main-footer .container,
 #footer-bottom .container {
@@ -127,15 +130,14 @@ body.et_header_style_split #et-top-navigation nav>ul>li>a {
 }
 
 .splash-container .et_pb_image_wrap::after {
-	/*background: rgba(104,90,41,25%);*/
-height: 100%;
-width: 100%;
-position: absolute;
-top: 0;
-left: 0;
-content: '';
-z-index: 9;
-opacity: .75;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 9;
+	opacity: .75;
 }
 
 .flex-full {
@@ -205,16 +207,6 @@ opacity: .75;
 	position: absolute;
 	right: 0;
 }
-.close-bio-container button::after {
-	height: 2px;
-	width: 20px;
-	background-color: #000;
-	content: "";
-	transform: rotate(-45deg);
-	position: absolute;
-	right: 0;
-}
-
 #top-header, #top-header .container, #top-header #et-info, #top-header .et-social-icon a {
 	line-height: 1.5em;
 }
@@ -312,6 +304,9 @@ opacity: .75;
 	}
 	.et_header_style_left .logo_container  {
 		flex-basis: 175px;
+	}
+	#hero {
+		padding-top: 63.23px!important;
 	}
 	.et_header_style_left .logo_container #logo,
 	.et-fixed-header .et_header_style_left .logo_container #logo {
