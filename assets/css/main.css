@@ -40,7 +40,7 @@ header .container {
   margin: 0 auto;
 }
 
-#top-menu li.current-menu-ancestor > a, #top-menu li.current-menu-item > a, #top-menu li.current_page_item > a, .et-fixed-header #top-menu li.current-menu-ancestor > a, .et-fixed-header #top-menu li.current-menu-item > a, .et-fixed-header #top-menu li.current_page_item > a {
+#top-menu li.current-menu-ancestor > a, #top-menu li.current-menu-item > a, #top-menu li.current_page_item > a, body .et-fixed-header #top-menu li.current-menu-ancestor > a, body .et-fixed-header #top-menu li.current-menu-item > a, body .et-fixed-header #top-menu li.current_page_item > a {
   color: #fff !important;
 }
 
