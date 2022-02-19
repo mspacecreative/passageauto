@@ -260,7 +260,8 @@ body.et_header_style_split #et-top-navigation nav > ul > li > a {
   cursor: pointer;
 }
 
-.close-bio-container button::before {
+.close-bio-container button::before,
+.close-bio-container button::after {
   height: 2px;
   width: 20px;
   background-color: #000;
@@ -268,7 +269,14 @@ body.et_header_style_split #et-top-navigation nav > ul > li > a {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
+}
+
+.close-bio-container button::before {
   right: 0;
+}
+
+.close-bio-container button::after {
+  left: 0;
 }
 
 #top-header, #top-header .container, #top-header #et-info, #top-header .et-social-icon a {
