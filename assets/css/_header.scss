@@ -205,13 +205,12 @@ body.et_header_style_split #et-top-navigation nav>ul>li>a {
 	background-color: #000;
 	content: "";
 	position: absolute;
+	left: 0;
 }
 .close-bio-container button::before {
-	right: 0;
 	transform: rotate(45deg);
 }
 .close-bio-container button::after {
-	left: 0;
 	transform: rotate(-45deg);
 }
 #top-header, #top-header .container, #top-header #et-info, #top-header .et-social-icon a {
