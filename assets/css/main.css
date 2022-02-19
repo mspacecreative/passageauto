@@ -206,7 +206,7 @@ body.et_header_style_split #et-top-navigation nav > ul > li > a {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 999999;
+  z-index: 9999999;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
