@@ -71,7 +71,7 @@ function promo_item($promotype = '') {
 			} elseif ($promotype == 'featured-product') {
 				echo
 				'<div class="flex-full text-align-center">
-					<h1>' .  __('Feature Product') . '</h1>
+					<h1>' .  __('Featured Product') . '</h1>
 				</div>';
 			} else {
 			echo
