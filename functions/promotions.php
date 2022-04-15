@@ -61,9 +61,7 @@ function promo_item($promotype = '') {
 			if ( $leadintitle ) {
 			echo
 			'<div class="flex-full text-align-center">
-				<h1>' . 
-				if ( $leadintitle ) {
-				$leadintitle . '</h1>
+				<h1>' . $leadintitle . '</h1>
 			</div>';
 			} elseif ($promotype == 'flyer') {
 				echo
