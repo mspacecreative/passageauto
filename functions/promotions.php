@@ -63,6 +63,16 @@ function promo_item($promotype = '') {
 			'<div class="flex-full text-align-center">
 				<h1>' . $leadintitle . '</h1>
 			</div>';
+			} elseif ($promotype == 'flyer') {
+				echo
+				'<div class="flex-full text-align-center">
+					<h1>' .  __('Promo Flyer') . '</h1>
+				</div>';
+			} elseif ($promotype == 'featured-product') {
+				echo
+				'<div class="flex-full text-align-center">
+					<h1>' .  __('Featured Product') . '</h1>
+				</div>';
 			} else {
 			echo
 			'<div class="flex-full text-align-center">
