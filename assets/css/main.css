@@ -625,8 +625,8 @@ body.et_pb_button_helper_class .et_pb_button:hover {
 .flex-full h1 {
   display: inline-block;
   padding: 10px 25px;
-  border: 2 px solid #ff2323;
-  background-color: #ff2323;
+  border: 2 px solid #000;
+  background-color: #000;
   color: #fff;
   border-radius: 30px;
   font-size: 16px;
