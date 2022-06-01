@@ -57,67 +57,74 @@ function promo_item($promotype = '') {
 				default:
 					$bgcolor = '';
 			}
+
+			echo
+			'<div class="col display-flex">
+				<div class="inner">';
 				
-			if ( $leadintitle ) {
-			echo
-			'<div class="flex-full text-align-center">
-				<h1>' . $leadintitle . '</h1>
-			</div>';
-			} elseif ($promotype == 'flyer') {
-				echo
-				'<div class="flex-full text-align-center">
-					<h1>' .  __('Promo Flyer') . '</h1>
-				</div>';
-			} elseif ($promotype == 'featured-product') {
-				echo
-				'<div class="flex-full text-align-center">
-					<h1>' .  __('Featured Product') . '</h1>
-				</div>';
-			} else {
-			echo
-			'<div class="flex-full text-align-center">
-				<h1>' .  __('Featured Product') . '</h1>
-			</div>';
-			}
-			if ( $title && !$showtitle ) {
-			echo
-			'<h2 style="font-weight: bold; color: #ff2323; padding-bottom: 0; margin-bottom: 1em;">' .  $title . '</h2>';
-			}
-			if ( $price ) {
-			echo
-			'<div class="flex-full-reg">
-				<h3 style="margin: 0 0 1em; font-weight: bold; padding-bottom: 0;">' .  __($dollarsign), $price . '</h3>
-			</div>';
-			}
-			if ( $content ) {
-			echo
-			'<div class="display-flex justify-content-space-between">
-				<div class="featured-product-content">';
-					echo $content;
-					if ($flyerpdf || $flyerlink) {
-					echo 
-					'<p><a class="et_pb_button" href="'; if ($flyerpdf): echo $flyerpdf['url']; elseif ($flyerlink): echo $flyerlink; endif; echo '" target="_blank" style="display: inline-block; margin-top: 1em;">' . __($downloadflyer) . '</a></p>';
+					if ( $leadintitle ) {
+					echo
+					'<div class="flex-full text-align-center">
+						<h1>' . $leadintitle . '</h1>
+					</div>';
+					} elseif ($promotype == 'flyer') {
+					echo
+					'<div class="flex-full text-align-center">
+						<h1>' .  __('Promo Flyer') . '</h1>
+					</div>';
+					} elseif ($promotype == 'featured-product') {
+					echo
+					'<div class="flex-full text-align-center">
+						<h1>' .  __('Featured Product') . '</h1>
+					</div>';
+					} else {
+					echo
+					'<div class="flex-full text-align-center">
+						<h1>' .  __('Featured Product') . '</h1>
+					</div>';
+					}
+					if ( $title && !$showtitle ) {
+					echo
+					'<h2 style="font-weight: bold; color: #ff2323; padding-bottom: 0; margin-bottom: 1em;">' .  $title . '</h2>';
+					}
+					if ( $price ) {
+					echo
+					'<div class="flex-full-reg">
+						<h3 style="margin: 0 0 1em; font-weight: bold; padding-bottom: 0;">' .  __($dollarsign), $price . '</h3>
+					</div>';
+					}
+					if ( $content ) {
+					echo
+					'<div class="display-flex justify-content-space-between">
+						<div class="featured-product-content">';
+							echo $content;
+							if ($flyerpdf || $flyerlink) {
+							echo 
+							'<p><a class="et_pb_button" href="'; if ($flyerpdf): echo $flyerpdf['url']; elseif ($flyerlink): echo $flyerlink; endif; echo '" target="_blank" style="display: inline-block; margin-top: 1em;">' . __($downloadflyer) . '</a></p>';
+							}
+						echo
+						'</div>';
+					}
+						if ( !empty($product_image) || !empty($promo_flyer_cover) ) {
+						echo
+						'<div class="featured-product-image'; if ($flyerpdf || $flyerlink): echo ' box-shadow'; endif; echo '">';
+							if ($flyerpdf || $flyerlink): echo '
+							<a href="'; if ($flyerpdf): echo $flyerpdf['url']; elseif ($flyerlink): echo $flyerlink; endif; echo '" class="view-pdf-container" target="_blank">'; 
+							endif;
+									
+								if ($flyerpdf || $flyerlink): echo $flyer_img;
+								else : echo $product_img; 
+								endif;
+							if ($flyerpdf || $flyerlink): echo '
+							</a>'; 
+							endif;
+						echo 
+						'</div>
+					</div>';
 					}
 				echo
-				'</div>';
-			}
-				if ( !empty($product_image) || !empty($promo_flyer_cover) ) {
-				echo
-				'<div class="featured-product-image'; if ($flyerpdf || $flyerlink): echo ' box-shadow'; endif; echo '">';
-					if ($flyerpdf || $flyerlink): echo '
-					<a href="'; if ($flyerpdf): echo $flyerpdf['url']; elseif ($flyerlink): echo $flyerlink; endif; echo '" class="view-pdf-container" target="_blank">'; 
-					endif;
-							
-						if ($flyerpdf || $flyerlink): echo $flyer_img;
-						else : echo $product_img; 
-						endif;
-					if ($flyerpdf || $flyerlink): echo '
-					</a>'; 
-					endif;
-				echo 
 				'</div>
 			</div>';
-			}
 		}
 	} wp_reset_query();
 } ?>
