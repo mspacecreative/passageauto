@@ -93,18 +93,22 @@ function promo_item($promotype) {
 						<h3 style="margin: 0 0 1em; font-weight: bold; padding-bottom: 0;">' .  __($dollarsign), $price . '</h3>
 					</div>';
 					}
-					if ($content) {
-						echo $content; 
-					}
-					if ( $flyerpdf || $flyerlink ) {
+					
+					if ( $content && !empty($product_image) || !empty($promo_flyer_cover) ) {
 					echo
-					'<div class="display-flex justify-content-space-between">
-						<div class="featured-product-content">';
+					'<div class="display-flex justify-content-space-between">';
+						echo	
+						'<div class="featured-product-content">';
+							echo 
+							'<div class="promo-content">'
+								. $content . 
+							'</div>';
+							if ($flyerpdf || $flyerlink) {
 							echo 
 							'<p><a class="et_pb_button" href="'; if ($flyerpdf): echo $flyerpdf['url']; elseif ($flyerlink): echo $flyerlink; endif; echo '" target="_blank" style="display: inline-block; margin-top: 1em;">' . __($downloadflyer) . '</a></p>';
+							}
 						echo
 						'</div>';
-						if ( !empty($product_image) || !empty($promo_flyer_cover) ) {
 						echo
 						'<div class="featured-product-image'; if ($flyerpdf || $flyerlink): echo ' box-shadow'; endif; echo '">';
 							if ($flyerpdf || $flyerlink): 
@@ -113,7 +117,7 @@ function promo_item($promotype) {
 							endif;
 											
 							if ($flyerpdf || $flyerlink): echo $flyer_img;
-							else : echo $product_img; 
+							elseif ($product_image) : echo $product_img; 
 							endif;
 
 							if ($flyerpdf || $flyerlink): echo 
@@ -121,9 +125,17 @@ function promo_item($promotype) {
 							endif;
 						echo 
 						'</div>';
-						}
 					echo
 					'</div>';
+					} else {
+						echo 
+						'<div class="promo-content">'
+							. $content . 
+						'</div>';
+						if ($flyerpdf || $flyerlink) {
+							echo 
+							'<p><a class="et_pb_button" href="'; if ($flyerpdf): echo $flyerpdf['url']; elseif ($flyerlink): echo $flyerlink; endif; echo '" target="_blank" style="display: inline-block; margin-top: 1em;">' . __($downloadflyer) . '</a></p>';
+						}
 					}
 				echo
 				'</div>

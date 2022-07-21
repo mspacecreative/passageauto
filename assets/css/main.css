@@ -644,6 +644,10 @@ body.et_pb_button_helper_class .et_pb_button:hover {
   width: 100%;
 }
 
+.promo-content img {
+  width: 100%;
+}
+
 .align-middle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
