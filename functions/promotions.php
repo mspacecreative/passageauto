@@ -1,5 +1,5 @@
 <?php 
-function promo_item($promotype = '') {
+function promo_item($promotype) {
 	$args = array(
 		'post_type' => 'product',
 		'posts_per_page' => 1,
@@ -93,34 +93,37 @@ function promo_item($promotype = '') {
 						<h3 style="margin: 0 0 1em; font-weight: bold; padding-bottom: 0;">' .  __($dollarsign), $price . '</h3>
 					</div>';
 					}
-					if ( $content ) {
+					if ($content) {
+						echo $content; 
+					}
+					if ( $flyerpdf || $flyerlink ) {
 					echo
 					'<div class="display-flex justify-content-space-between">
 						<div class="featured-product-content">';
-							echo $content;
-							if ($flyerpdf || $flyerlink) {
 							echo 
 							'<p><a class="et_pb_button" href="'; if ($flyerpdf): echo $flyerpdf['url']; elseif ($flyerlink): echo $flyerlink; endif; echo '" target="_blank" style="display: inline-block; margin-top: 1em;">' . __($downloadflyer) . '</a></p>';
-							}
 						echo
 						'</div>';
-					}
 						if ( !empty($product_image) || !empty($promo_flyer_cover) ) {
 						echo
 						'<div class="featured-product-image'; if ($flyerpdf || $flyerlink): echo ' box-shadow'; endif; echo '">';
-							if ($flyerpdf || $flyerlink): echo '
-							<a href="'; if ($flyerpdf): echo $flyerpdf['url']; elseif ($flyerlink): echo $flyerlink; endif; echo '" class="view-pdf-container" target="_blank">'; 
+							if ($flyerpdf || $flyerlink): 
+							echo 
+							'<a href="'; if ($flyerpdf): echo $flyerpdf['url']; elseif ($flyerlink): echo $flyerlink; endif; echo '" class="view-pdf-container" target="_blank">'; 
 							endif;
-									
-								if ($flyerpdf || $flyerlink): echo $flyer_img;
-								else : echo $product_img; 
-								endif;
-							if ($flyerpdf || $flyerlink): echo '
-							</a>'; 
+											
+							if ($flyerpdf || $flyerlink): echo $flyer_img;
+							else : echo $product_img; 
+							endif;
+
+							if ($flyerpdf || $flyerlink): echo 
+							'</a>'; 
 							endif;
 						echo 
-						'</div>
-					</div>';
+						'</div>';
+						}
+					echo
+					'</div>';
 					}
 				echo
 				'</div>

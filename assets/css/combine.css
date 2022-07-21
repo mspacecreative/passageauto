@@ -641,6 +641,7 @@ body.et_pb_button_helper_class .et_pb_button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .align-middle {
