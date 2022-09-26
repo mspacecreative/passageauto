@@ -140,6 +140,9 @@ function promo_item($promotype) {
 				echo
 				'</div>
 			</div>';
+		} else {
+			echo 
+			'<h3>' . __('Sorry, there are no currently no promotions or featured products. Please check back soon!') . '</h3>';
 		}
 	} wp_reset_query();
 } ?>
