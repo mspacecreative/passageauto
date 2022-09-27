@@ -6,6 +6,7 @@
 				promo_item('featured-product');
 				promo_item('flyer');
 			else : ?>
+			<!-- CONTENT THAT SHOWS IF THERE ARE NO FEATURED PRODUCTS/PROMOTIONS -->
 				<h3 style="text-align: center;"><?php echo esc_html_e('Sorry, there are currently no promotions or featured products.'); ?><br /><?php echo esc_html_e('Please check back soon!'); ?></h3>
 			<?php endif; ?>
 		</div>
